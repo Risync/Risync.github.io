@@ -9,15 +9,20 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999; 
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+}
+
+.top-bar img {
+    margin-right: 10px;
+    width: 45px;
+    height: auto;
 }
 
 h1 {
-    position: absolute;
-    top: -95px;
-    left: 15.75%;
-    color: white; 
-    z-index: 10000; 
+    color: white;
+    margin: 0; 
 }
 
 #introduction, #media {
