@@ -1,30 +1,90 @@
-body {
-    position: relative; 
+@font-face {
+	font-family: 'minecraftfont';
+	src: local('minecraftfont'), url('fonts/minecraftfont.woff') format('woff');
 }
 
-.top-bar {
-    background-color: black;
-    width: 100%;
-    height: 50px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
+body {
+    background-image: url('images/Monumenta.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+p {
+    font-family: 'minecraftfont', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #FFF;
+ }
+
+.name {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+}
+
+.name img {
+    max-height: 80vh;
+    max-width: 100%;
+     height: 127px;
+    width: 400px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center; 
     align-items: center;
 }
 
-.top-bar img {
-    margin-right: 10px;
-    width: 45px;
-    height: auto;
+.about_me_button {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-h1 {
-    color: white;
-    margin: 0; 
+.about_me_button img {
+    max-height: 80vh;
+    max-width: 100%;
+    height: 45px;
+    width: 450px;
 }
 
-#introduction, #media {
-    margin-top: 80px;
+.friends_button {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.friends_button img {
+    max-height: 80vh;
+    max-width: 100%;
+    height: 45px;
+    width: 450px;
+}
+
+.contact_button {
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact_button img {
+    max-height: 80vh;
+    max-width: 100%;
+    height: 45px;
+    width: 450px;
+}
+
+.copyright {
+    position: fixed;
+    top: 94%;
+    left: 79%;
 }
