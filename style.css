@@ -50,15 +50,15 @@ body {
     width: 450px;
 }
 
-.container_copyright {
+footer {
     display: flex;
     justify-content: space-between;
     color: #FFF;
-    width: 100%; /* Ensure container stretches across the body */
+    width: 100%; /* Ensure container stretches across the body */\
+    margin: 0 1rem;
 }
 
-.copyright,
-.version {
+.footer_text {
     display: block;
 }
 
