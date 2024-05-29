@@ -44,10 +44,15 @@ body {
     gap: 10px;
 }
 
+
 .menuButton {
     max-width: 100%;
     height: 45px;
     width: 450px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    image-rendering: pixelated; 
+    image-rendering: crisp-edges;
 }
 
 .container_copyright {
@@ -70,3 +75,4 @@ body {
     .menuButton:hover {
     background-image: url(images/button_hover.png);
     }
+
