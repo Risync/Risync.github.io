@@ -44,7 +44,7 @@ body {
     gap: 10px;
 }
 
-.menuButton img {
+.menuButton {
     max-width: 100%;
     height: 45px;
     width: 450px;
