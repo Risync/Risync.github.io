@@ -1,6 +1,11 @@
 @font-face {
-	font-family: 'minecraftfont';
-	src: local('minecraftfont'), url('fonts/minecraftfont.woff') format('woff');
+    font-family: 'minecraftfont';
+    src: local('minecraftfont'), url('fonts/minecraftfont.woff') format('woff');
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
 body {
@@ -8,83 +13,51 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
-}
-
-p {
     font-family: 'minecraftfont', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    color: #FFF;
- }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
 
 .name {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30%;
+    margin-top: 20px;
 }
 
 .name img {
-    max-height: 80vh;
-    max-width: 100%;
-     height: 127px;
+    height: 127px;
     width: 400px;
 }
 
-.container {
-    position: relative;
-    width: 100%;
-    height: 100vh; 
+.container_button {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
+    flex-grow: 1;
 }
 
-.about_me_button {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.about_me_button img {
+.buttons img {
     max-height: 80vh;
     max-width: 100%;
     height: 45px;
     width: 450px;
 }
 
-.friends_button {
-    position: absolute;
-    top: 52%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.container_copyright {
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+    width: 100%; /* Ensure container stretches across the body */
 }
 
-.friends_button img {
-    max-height: 80vh;
-    max-width: 100%;
-    height: 45px;
-    width: 450px;
-}
-
-.contact_button {
-    position: absolute;
-    top: 59%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.contact_button img {
-    max-height: 80vh;
-    max-width: 100%;
-    height: 45px;
-    width: 450px;
-}
-
-.copyright {
-    position: fixed;
-    top: 94%;
-    left: 79%;
+.copyright,
+.version {
+    display: block;
 }
