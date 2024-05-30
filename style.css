@@ -13,6 +13,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    background-color: black;
     font-family: 'minecraftfont', sans-serif;
     display: flex;
     flex-direction: column;
