@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'minecraftfont';
+    src: local('minecraftfont'), url('fonts/minecraftfont.woff') format('woff');
+}
+
+body {
+    font-family: 'minecraftfont', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
+}
+
+.aboutme {
+    background-image: url('images/aboutme.png');
+}
+
+.contact {
+    background-image: url('images/contact.png');
+}
+
+.friends {
+    background-image: url('images/friends.png');
+}
+
+.error {
+    background-image: url('images/silly.png');
+}
+
+.box {
+    background-color: black;
+    padding: 40px; 
+    border-radius: 8px;
+    opacity: 0.8;
+    max-width: 600px; 
+    width: 80%; 
+    text-align: center; 
+    position: relative; 
+}
+
+.box p {
+    margin: 0;
+    color: white;
+    font-size: 1.2em; 
+}
