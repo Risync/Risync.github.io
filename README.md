@@ -1,2 +1,2 @@
 # No way, A website!
-# Still learning html and css, looks like shit now adding content bit by bit.
+# This website is now also used on my main account, Timo.
